@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ss"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="20dp"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ss"
+        android:orientation="horizontal"
+
+        >
+
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="190dp"
+            android:background="#FFF"
+            android:ems="10"
+            android:hint="username"
+
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/editText2"
+            android:layout_marginTop="20dp"
+            android:background="#FFF"
+            android:hint="Password" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Dont have an account?"
+            android:id="@+id/textView"
+            android:textColor="#fdfafa"
+            android:layout_below="@+id/bSignIn"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Sign Up"
+            android:id="@+id/idSignpp"
+            android:layout_below="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:textColor="#fefcfc" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign In"
+            android:id="@+id/bSignIn"
+            android:layout_below="@+id/editText"
+            android:layout_marginTop="87dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
