@@ -2,46 +2,46 @@
 <items version="2" >
 
     <item
-        jar="C:\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.1.0\support-annotations-23.1.0.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="92e3fc113ec3ee36b64603a38857b95700025633">
-        <dex dex="C:\Users\Codetribe PC\Documents\Android project\DishHub\app\build\intermediates\pre-dexed\debug\support-annotations-23.1.0-24c46cbde714be0842274322039416f341dd73a0.jar" />
-    </item>
-    <item
-        jar="C:\Users\Codetribe PC\Documents\Android project\DishHub\app\build\intermediates\exploded-aar\com.android.support\design\23.1.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="19026d31f5d3ae868db81319671a642be5fbba08">
-        <dex dex="C:\Users\Codetribe PC\Documents\Android project\DishHub\app\build\intermediates\pre-dexed\debug\classes-167d605e1e106fc00f02ba8cf0dd4db1f2b50b58.jar" />
-    </item>
-    <item
-        jar="C:\Users\Codetribe PC\Documents\Android project\DishHub\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="ddde541c289c8b816a8f8fd6c325d80788c522a6">
-        <dex dex="C:\Users\Codetribe PC\Documents\Android project\DishHub\app\build\intermediates\pre-dexed\debug\classes-241f4c643f9edb4489ff75b3e63b24e6bbfa28f6.jar" />
-    </item>
-    <item
-        jar="C:\Users\Codetribe PC\Documents\Android project\DishHub\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.1.0\jars\classes.jar"
+        jar="C:\Users\CodeTribe\Documents\Android Projects\DishHub\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.1.0\jars\classes.jar"
         jumboMode="false"
         revision="23.0.1"
         sha1="3f151e49c316a5ab2c065969a3b3b55ef9b393fc">
-        <dex dex="C:\Users\Codetribe PC\Documents\Android project\DishHub\app\build\intermediates\pre-dexed\debug\classes-11f98411cbe714df8974ef94b52e093172db1fe3.jar" />
+        <dex dex="C:\Users\CodeTribe\Documents\Android Projects\DishHub\app\build\intermediates\pre-dexed\debug\classes-213e1ca974a813c5ed6fae847c61b65d7634c0b6.jar" />
     </item>
     <item
-        jar="C:\Users\Codetribe PC\Documents\Android project\DishHub\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.0\jars\classes.jar"
+        jar="C:\Users\CodeTribe\Documents\Android Projects\DishHub\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.0\jars\classes.jar"
         jumboMode="false"
         revision="23.0.1"
         sha1="57ae0d750ff83f0c738d21720224ac7ea866a094">
-        <dex dex="C:\Users\Codetribe PC\Documents\Android project\DishHub\app\build\intermediates\pre-dexed\debug\classes-800d7e8d2ae75c022bd37b0c14d7a6d74a6d5907.jar" />
+        <dex dex="C:\Users\CodeTribe\Documents\Android Projects\DishHub\app\build\intermediates\pre-dexed\debug\classes-b2b190ee50f6008a015ec3e28fc27554f2cf5291.jar" />
     </item>
     <item
-        jar="C:\Users\Codetribe PC\Documents\Android project\DishHub\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\jars\libs\internal_impl-23.1.0.jar"
+        jar="C:\android-sdk_r24.4-windows\android-sdk-windows\extras\android\m2repository\com\android\support\support-annotations\23.1.0\support-annotations-23.1.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="92e3fc113ec3ee36b64603a38857b95700025633">
+        <dex dex="C:\Users\CodeTribe\Documents\Android Projects\DishHub\app\build\intermediates\pre-dexed\debug\support-annotations-23.1.0-65b4b4125729f892feb0c14067d049f4d355ebe1.jar" />
+    </item>
+    <item
+        jar="C:\Users\CodeTribe\Documents\Android Projects\DishHub\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="ddde541c289c8b816a8f8fd6c325d80788c522a6">
+        <dex dex="C:\Users\CodeTribe\Documents\Android Projects\DishHub\app\build\intermediates\pre-dexed\debug\classes-a74f4374273bd848176401929da92256bf568caa.jar" />
+    </item>
+    <item
+        jar="C:\Users\CodeTribe\Documents\Android Projects\DishHub\app\build\intermediates\exploded-aar\com.android.support\design\23.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="19026d31f5d3ae868db81319671a642be5fbba08">
+        <dex dex="C:\Users\CodeTribe\Documents\Android Projects\DishHub\app\build\intermediates\pre-dexed\debug\classes-df102cd2589346f8a6c692fe1525179354af0594.jar" />
+    </item>
+    <item
+        jar="C:\Users\CodeTribe\Documents\Android Projects\DishHub\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.0\jars\libs\internal_impl-23.1.0.jar"
         jumboMode="false"
         revision="23.0.1"
         sha1="8716243bf04bae8d6c9ca94d27b9a9be7236f0a3">
-        <dex dex="C:\Users\Codetribe PC\Documents\Android project\DishHub\app\build\intermediates\pre-dexed\debug\internal_impl-23.1.0-7bc7037c7abbe378f9947ec78367188947502b0a.jar" />
+        <dex dex="C:\Users\CodeTribe\Documents\Android Projects\DishHub\app\build\intermediates\pre-dexed\debug\internal_impl-23.1.0-e9c0d351647586871b92e46849fc2bd1e05e07f6.jar" />
     </item>
 
 </items>
