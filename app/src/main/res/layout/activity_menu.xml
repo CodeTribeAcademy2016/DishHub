@@ -1,0 +1,165 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/green"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card1"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="#960c21"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        card_view:cardBackgroundColor="#43af8b"
+        card_view:cardCornerRadius="10dp"
+        card_view:cardElevation="5dp"
+        >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="110dp">
+
+            <ImageView
+                android:id="@+id/head"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:src="@drawable/chic"
+                android:scaleType="centerCrop"
+                android:contentDescription="@string/foodmenu" />
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:text="@string/food"
+                android:textSize="20sp"
+                android:gravity="left"
+                />
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:id="@+id/card"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="#960c21"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        card_view:cardBackgroundColor="#43af8b"
+        card_view:cardCornerRadius="10dp"
+        card_view:cardElevation="5dp"
+        >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="110dp">
+
+            <ImageView
+                android:id="@+id/head1"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:src="@drawable/burg"
+                android:scaleType="centerCrop"
+                />
+            <TextView
+                android:id="@+id/text12"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:text="Cheese Burger R:30.00"
+                android:textSize="20sp"
+                android:gravity="left"
+                />
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:id="@+id/card12"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="#960c21"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        card_view:cardBackgroundColor="#43af8b"
+        card_view:cardCornerRadius="10dp"
+        card_view:cardElevation="5dp"
+        >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="110dp">
+
+            <ImageView
+                android:id="@+id/head2"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:src="@drawable/rice"
+                android:scaleType="centerCrop"
+                />
+            <TextView
+                android:id="@+id/text13"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:text="Rice n mince R40.00"
+                android:textSize="20sp"
+                android:gravity="left"
+                />
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:layout_marginTop="10dp"
+        android:id="@+id/card13"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="#960c21"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        card_view:cardBackgroundColor="#43af8b"
+        card_view:cardCornerRadius="10dp"
+        card_view:cardElevation="5dp"
+        >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="110dp">
+
+            <ImageView
+                android:id="@+id/head23"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:src="@drawable/chips"
+                android:scaleType="centerCrop"
+                />
+            <TextView
+                android:id="@+id/text133"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:text="Chips : R10.00"
+                android:textSize="20sp"
+                android:gravity="left"
+                />
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

@@ -10,10 +10,11 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:id="@+id/imageView2"
-        android:src="@drawable/kfc"
+        android:src="@mipmap/kaua"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:contentDescription="@string/kaua" />
 
     <RatingBar
 
@@ -27,44 +28,48 @@
         android:layout_alignBottom="@+id/imageView2" />
 
     <ImageView
-        android:src="@drawable/mcd"
+        android:src="@mipmap/mcd"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:id="@+id/imageView1"
 
         android:layout_below="@+id/imageView2"
         android:layout_alignRight="@+id/imageView2"
-        android:layout_alignEnd="@+id/imageView2" />
+        android:layout_alignEnd="@+id/imageView2"
+        android:contentDescription="@string/mugg" />
 
     <ImageView
-        android:src="@drawable/nandos"
+        android:src="@mipmap/nandos"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:id="@+id/imageView3"
         android:layout_below="@+id/imageView1"
         android:layout_alignLeft="@+id/imageView1"
-        android:layout_alignStart="@+id/imageView1" />
+        android:layout_alignStart="@+id/imageView1"
+        android:contentDescription="@string/nandos" />
 
     <ImageView
-        android:src="@drawable/mugg"
+        android:src="@mipmap/mugg"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:id="@+id/imageView4"
         android:layout_below="@+id/imageView3"
         android:layout_alignLeft="@+id/imageView3"
-        android:layout_alignStart="@+id/imageView3" />
+        android:layout_alignStart="@+id/imageView3"
+        android:contentDescription="nandos" />
     <ImageView
-        android:src="@drawable/bk"
+        android:src="@mipmap/bk"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:id="@+id/imageView5"
 
         android:layout_below="@+id/imageView7"
         android:layout_alignLeft="@+id/imageView7"
-        android:layout_alignStart="@+id/imageView7" />
+        android:layout_alignStart="@+id/imageView7"
+        android:contentDescription="@string/burger" />
 
     <ImageView
-        android:src="@drawable/kaua"
+        android:src="@mipmap/kaua"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:id="@+id/imageView7"
@@ -102,7 +107,6 @@
         android:layout_height="wrap_content"
         android:id="@+id/ratingBar5"
         android:layout_alignBottom="@+id/imageView7"
-        android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
     <RatingBar
