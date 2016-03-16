@@ -75,6 +75,6 @@
         android:id="@+id/btnSign"
         android:scaleType="centerCrop"
         android:background="@drawable/btngreen"
-        android:layout_marginBottom="52dp" />
+        android:layout_marginBottom="53dp" />
 </LinearLayout>
 
