@@ -3,9 +3,9 @@
 
     <group android:checkableBehavior="single">
         <item android:id="@+id/nav_camara" android:icon="@android:drawable/ic_menu_camera"
-            android:title="Edit Profile" />
+            android:title="About CafeZing" />
         <item android:id="@+id/nav_gallery" android:icon="@android:drawable/ic_menu_gallery"
-            android:title="Favourites" />
+            android:title="Location" />
         <item android:id="@+id/nav_slideshow" android:icon="@android:drawable/ic_menu_slideshow"
             android:title="Order history" />
         <item android:id="@+id/nav_manage" android:icon="@android:drawable/ic_menu_manage"
