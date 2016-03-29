@@ -25,7 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="Justice Madlopha \na 22 year old \nfrom Mpumalanga \nStudied at University of Mpumalanga"
+        android:text="@string/justice"
 
         android:id="@+id/textView2"
         android:layout_alignTop="@+id/imageView6"
@@ -45,7 +45,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="Muzi Ngobe \na 25 year old \nfrom Gauteng \nStudied at University of Kwazulu Natal"
+        android:text="@string/muzi"
 
         android:id="@+id/textView3"
         android:layout_alignBottom="@+id/imageView7"
@@ -64,7 +64,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="Lerato Mothupi \na 23 year old \nfrom Limpopo \nStudied at University of Pretoria"
+        android:text="@string/Lerato"
 
         android:id="@+id/textView4"
         android:layout_below="@+id/imageView9"
@@ -83,7 +83,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="Saviour Molatudi\na 19 year old \nfrom Mpumalanga \nStudied at University of Limpopo"
+        android:text="@string/saviour"
 
         android:id="@+id/textView5"
         android:layout_alignTop="@+id/imageView9"
