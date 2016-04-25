@@ -10,7 +10,7 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:id="@+id/imageView2"
-        android:src="@mipmap/kaua"
+        android:src="@drawable/kaua"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
@@ -28,7 +28,7 @@
         android:layout_alignBottom="@+id/imageView2" />
 
     <ImageView
-        android:src="@mipmap/mcd"
+        android:src="@drawable/mcd"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:id="@+id/imageView1"
@@ -39,7 +39,7 @@
         android:contentDescription="@string/mugg" />
 
     <ImageView
-        android:src="@mipmap/nandos"
+        android:src="@drawable/nandos"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:id="@+id/imageView3"
@@ -49,7 +49,7 @@
         android:contentDescription="@string/nandos" />
 
     <ImageView
-        android:src="@mipmap/mugg"
+        android:src="@drawable/mugg"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:id="@+id/imageView4"
@@ -58,7 +58,7 @@
         android:layout_alignStart="@+id/imageView3"
         android:contentDescription="nandos" />
     <ImageView
-        android:src="@mipmap/bk"
+        android:src="@drawable/bk"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:id="@+id/imageView5"
@@ -69,7 +69,7 @@
         android:contentDescription="@string/burger" />
 
     <ImageView
-        android:src="@mipmap/kaua"
+        android:src="@drawable/kaua"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:id="@+id/imageView7"

@@ -1,29 +1,27 @@
-package com.restauarant.codetribe.disapp;
+package com.example.codetribe.disapp;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.NavigationView;
 import android.support.design.widget.Snackbar;
+import android.view.View;
+import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.MenuItem;
 import android.view.Menu;
-import android.view.View;
+import android.view.MenuItem;
 
-/**
- * Created by CodeTribe1 on 3/22/2016.
- */
-public class navigation extends AppCompatActivity
+import com.restauarant.codetribe.disapp.R;
+
+public class CustomerNavigation extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_navigation);
+        setContentView(R.layout.activity_customer_navigation);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -51,7 +49,7 @@ public class navigation extends AppCompatActivity
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.navigation, (android.view.Menu) menu);
+        getMenuInflater().inflate(R.menu.customer_navigation, menu);
         return true;
     }
 
@@ -63,11 +61,7 @@ public class navigation extends AppCompatActivity
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.dev)
-        {
-            Intent intent = new Intent(navigation.this,Developers.class);
-            startActivity(intent);
-
+        if (id == R.id.action_settings) {
             return true;
         }
 
@@ -80,29 +74,16 @@ public class navigation extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camara)
-        {
-            Intent intent = new Intent(navigation.this,ProfileActivity.class);
-            startActivity(intent);
-        } else if (id == R.id.nav_gallery)
-        {
-            Intent intent = new Intent(navigation.this,Favourites.class);
-            startActivity(intent);
+        if (id == R.id.nav_camera) {
+            // Handle the camera action
+        } else if (id == R.id.nav_gallery) {
 
-        } else if (id == R.id.nav_slideshow)
-        {
-            Intent intent = new Intent(navigation.this,OrderHistory.class);
-            startActivity(intent);
+        } else if (id == R.id.nav_slideshow) {
 
-        } else if (id == R.id.nav_manage)
-        {
-            Intent intent = new Intent(navigation.this,HomeActivity.class);
-            startActivity(intent);
+        } else if (id == R.id.nav_manage) {
 
-        } else if (id == R.id.nav_share)
-        {
-            Intent intent = new Intent(navigation.this,Splash.class);
-            startActivity(intent);
+        } else if (id == R.id.nav_share) {
+
         } else if (id == R.id.nav_send) {
 
         }

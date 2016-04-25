@@ -27,9 +27,9 @@
     <string name="burger">burger</string>
 
     <string name="saviour">"Saviour Molatudi 19 year old from Mpumalanga Studied at University of Limpopo"</string>
-   <string name="Lerato">"Lerato Mothupi  23 year old from Limpopo Studied at University of Pretoria"</string>
-   <string name="muzi">"Muzi Ngobe \na 25 year old \nfrom Gauteng \nStudied at University of Kwazulu Natal"</string>
-   <string name="justice">"Justice Madlopha  22 year old from Mpumalanga Studied at University of Mpumalanga"</string>
+    <string name="Lerato">"Lerato Mothupi  23 year old from Limpopo Studied at University of Pretoria"</string>
+    <string name="muzi">"Muzi Ngobe \na 25 year old \nfrom Gauteng \nStudied at University of Kwazulu Natal"</string>
+    <string name="justice">"Justice Madlopha  22 year old from Mpumalanga Studied at University of Mpumalanga"</string>
     <string name="about">
 We believe that eating healthy and nutritious food can be delicious and decadent, which is why we source the best ingredients and prepare our food fresh to help you live an amaZING! life.
 We are a small group of people with a big dream to change the world one meal at a time - a dream driven by passion for the best of what life has to offer, from the lettuce in our salad to the Zing! in our step.SERVICE
@@ -37,6 +37,7 @@ We have a crush on our customers and we NEVER take them for granted.We pamper th
 SOLUTIONS
 We always push the boundaries to ensure that our service and products are fresh,innovative and unique.
 We strive to stay ahead of our own game</string>
+    <string name="title_activity_customer_navigation">CustomerNavigation</string>
 
 
 </resources>
