@@ -58,7 +58,7 @@
         android:layout_alignStart="@+id/imageView3"
         android:contentDescription="nandos" />
     <ImageView
-        android:src="@drawable/bk"
+        android:src="@mipmap/bk"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:id="@+id/imageView5"
