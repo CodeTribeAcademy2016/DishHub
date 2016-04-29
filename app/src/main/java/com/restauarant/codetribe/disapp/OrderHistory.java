@@ -18,7 +18,7 @@ public class OrderHistory extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_orderhistory);
 
-        String[] orders = {"Pap n  beef    R10.00     20/01/2016","Pap n  Chicken    R10.00     20/01/2016","grilled Chicken    R10.00     20/01/2016","chips   R10.00     20/01/2016","cheese burger    R10.00     20/01/2016","Maccaroni n' meat balls    R10.00     20/01/2016","Pap n  Chicken    R10.00     20/01/2016","grilled Chicken    R10.00     20/01/2016","chips   R10.00     20/01/2016","cheese burger    R10.00     20/01/2016","Maccaroni n' meat balls    R10.00     20/01/2016"};
+        String[] orders = {"Pap n  beef    R10.00     20/01/2016","Pap n  Chicken    R10.00     20/01/2016","grilled Chicken    R10.00     20/01/2016","chips   R10.00     20/01/2016","cheese burger    R10.00     20/01/2016","Maccaroni n' meat balls    R10.00     20/01/2016","Pap n  Chicken    R10.00     20/01/2016","grilled Chicken    R10.00     20/01/2016","chips   R10.00     20/01/2016","cheese burger    R10.00     20/01/2016","Maccaroni n' meat balls    R10.00     20/01/2016","Chicken Burger   R29.00     25/05/2016","Fries    R6.00     25/05/2016","Steak    R30.00     25/05/2016"};
         ListAdapter orderAdapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,orders);
         ListView listView = (ListView)findViewById(R.id.listView);
         listView.setAdapter(orderAdapter);
