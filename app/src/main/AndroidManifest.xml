@@ -31,7 +31,7 @@
             android:theme="@style/AppTheme"></activity>
         <activity android:name=".Menu"></activity>
         <activity
-            android:name="com.example.codetribe.disapp.CustomerNavigation"
+            android:name=".CustomerNavigation"
             android:label="@string/title_activity_customer_navigation"
             android:theme="@style/AppTheme"></activity>
     </application>

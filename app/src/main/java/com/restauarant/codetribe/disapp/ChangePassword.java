@@ -1,4 +1,4 @@
-package com.example.codetribe.disapp;
+package com.restauarant.codetribe.disapp;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
