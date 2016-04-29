@@ -5,6 +5,9 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
+
+import com.example.codetribe.disapp.CustomerNavigation;
 
 /**
  * Created by CodeTribe1 on 2016-03-22.
@@ -24,8 +27,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view)
             {
-                Intent intent = new Intent(MainActivity.this,navigation.class);
+                Intent intent = new Intent(MainActivity.this,CustomerNavigation.class);
                 startActivity(intent);
+                Toast.makeText(getBaseContext(),"Welcome",Toast.LENGTH_LONG).show();
             }
         });
     }

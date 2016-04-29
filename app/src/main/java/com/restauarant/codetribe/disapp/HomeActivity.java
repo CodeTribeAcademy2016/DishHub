@@ -5,36 +5,41 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 /**
  * Created by CodeTribe1 on 2016-03-22.
  */
 public class HomeActivity extends AppCompatActivity {
 
+    Button log,reg;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        Button btnSignin = (Button)findViewById(R.id.btnS);
-        Button btnUp = (Button)findViewById(R.id.btnSp);
+        log = (Button)findViewById(R.id.btnLogin);
+        reg = (Button)findViewById(R.id.btnRegister);
 
-        btnSignin.setOnClickListener(new View.OnClickListener()
+        log.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View view)
             {
-                Intent intent = new Intent(HomeActivity.this,MainActivity.class);
+                Intent intent = new Intent(HomeActivity.this, MainActivity.class);
                 startActivity(intent);
+                Toast.makeText(getBaseContext(),"Sign in", Toast.LENGTH_LONG).show();
             }
         });
-        btnUp.setOnClickListener(new View.OnClickListener()
+
+        reg.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View view)
             {
-                Intent intent = new Intent(HomeActivity.this,Register.class);
+                Intent intent = new Intent(HomeActivity.this, Register.class);
                 startActivity(intent);
+                Toast.makeText(getBaseContext(),"Sign in", Toast.LENGTH_LONG).show();
             }
         });
     }

@@ -1,6 +1,8 @@
 package com.example.codetribe.disapp;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.provider.ContactsContract;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.view.View;
@@ -12,7 +14,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
+import com.restauarant.codetribe.disapp.Favourites;
+import com.restauarant.codetribe.disapp.HomeActivity;
+import com.restauarant.codetribe.disapp.OrderHistory;
+import com.restauarant.codetribe.disapp.ProfileActivity;
 import com.restauarant.codetribe.disapp.R;
 
 public class CustomerNavigation extends AppCompatActivity
@@ -75,14 +82,31 @@ public class CustomerNavigation extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_camera) {
-            // Handle the camera action
+            Intent i = new Intent(CustomerNavigation.this, ProfileActivity.class);
+            startActivity(i);
+            Toast.makeText(getBaseContext(),"Edit your Profile", Toast.LENGTH_LONG).show();
         } else if (id == R.id.nav_gallery) {
+            Intent i = new Intent(CustomerNavigation.this, Favourites.class);
+            startActivity(i);
+            Toast.makeText(getBaseContext(),"Usually visited restaurant", Toast.LENGTH_LONG).show();
 
         } else if (id == R.id.nav_slideshow) {
+            Intent i = new Intent(CustomerNavigation.this, OrderHistory.class);
+            startActivity(i);
+            Toast.makeText(getBaseContext(),"View Order history", Toast.LENGTH_LONG).show();
 
         } else if (id == R.id.nav_manage) {
+            Intent i = new Intent(CustomerNavigation.this, ChangePassword.class);
+            startActivity(i);
+            Toast.makeText(getBaseContext(),"Change you password", Toast.LENGTH_LONG).show();
 
-        } else if (id == R.id.nav_share) {
+        }
+            else if (id == R.id.nav_manage_man) {
+            Intent i = new Intent(CustomerNavigation.this, HomeActivity.class);
+            startActivity(i);
+            Toast.makeText(getBaseContext(),"Logging out", Toast.LENGTH_LONG).show();
+
+        }else if (id == R.id.nav_share) {
 
         } else if (id == R.id.nav_send) {
 
