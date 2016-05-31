@@ -17,23 +17,24 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".OrderHistory" />
         <activity
             android:name=".navigation"
             android:label="@string/title_activity_navigation"
-            android:theme="@style/AppTheme"></activity>
-        <activity android:name=".ProfileActivity"></activity>
-        <activity android:name=".Favourites"></activity>
-        <activity android:name=".Splash"></activity>
+            android:theme="@style/AppTheme" />
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".Favourites" />
+        <activity android:name=".Splash" />
         <activity
             android:name=".Developers"
             android:label="@string/title_activity_developers"
-            android:theme="@style/AppTheme"></activity>
-        <activity android:name=".Menu"></activity>
+            android:theme="@style/AppTheme" />
+        <activity android:name=".Menu" />
         <activity
             android:name=".CustomerNavigation"
             android:label="@string/title_activity_customer_navigation"
-            android:theme="@style/AppTheme"></activity>
+            android:theme="@style/AppTheme" />
     </application>
 
 </manifest>

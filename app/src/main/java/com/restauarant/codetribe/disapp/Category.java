@@ -11,11 +11,15 @@ public class Category extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_category);
+        setContentView(R.layout.activity_menu);
+
+
 
         Button btnBreakfast = (Button)findViewById(R.id.btnB);
         Button btnLunch = (Button)findViewById(R.id.btnL);
         Button btnDinner = (Button)findViewById(R.id.btnD);
+
+
 
         btnBreakfast.setOnClickListener(new View.OnClickListener()
         {
@@ -46,5 +50,7 @@ public class Category extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        Intent c = new Intent(Category.this, Menu.class);
+        startActivity(c);
     }
 }

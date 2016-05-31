@@ -12,6 +12,7 @@ import android.widget.Toast;
 import com.restauarant.codetribe.disapp.utils.Constants;
 import com.restauarant.codetribe.disapp.utils.OkHttp;
 
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -36,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
             {
                 Intent intent = new Intent(MainActivity.this,CustomerNavigation.class);
                 startActivity(intent);
+                login();
                 Toast.makeText(getBaseContext(),"Welcome",Toast.LENGTH_LONG).show();
             }
         });
@@ -44,17 +46,13 @@ public class MainActivity extends AppCompatActivity {
     public void login()
     {
 
-        String user_email = username.getText().toString();
-        String password = pass.getText().toString();
+        //String user_email = username.getText().toString();
+        //String password = pass.getText().toString();
 
         String json_payload = "";
 
         try {
-            json_payload = new JSONObject()
-                    .put(Constants.email, user_email)
-                    .put(Constants.password,password)
-                    .put(Constants.requestType,Constants.loginRequestType)
-                    .toString();
+            json_payload = new JSONObject().put("menuID","3").put("requestType","211").toString();
         } catch (JSONException e) {
             e.printStackTrace();
         }
@@ -69,20 +67,30 @@ public class MainActivity extends AppCompatActivity {
         Thread thread = new Thread(new Runnable()
         {
             @Override
+            //
             public void run()
             {
                 try
                 {
-                    Log.i("Muntunza", Constants.dishHubUrl);
-                    Log.i("Muntunza", json_pay);
+                    Log.i("Ygritte", Constants.dishHubUrl);
+                    Log.i("Ygritte", json_pay);
 
-                    String res = helpOkHttp.post(Constants.dishHubUrl+"?JSON="+json_pay, json_pay);
+                    String res = helpOkHttp.post(Constants.dishHubUrl+"ds?JSON="+json_pay, json_pay);
+                    Log.i("Ygritte", res);
+                    //json parse
+                    JSONObject jsonObject = new JSONObject(res);
 
+                    JSONArray menu_array = jsonObject.getJSONArray("menuitemList");
 
-                    Log.i("First test......", res);
+                    for ( int i = 0; i < menu_array.length(); i++ ) {
 
+                       JSONObject menu = (JSONObject) menu_array.get(i);
 
+                        String menu_item_name = menu.getString("itemName");
 
+                        Log.i("Ygritte",""+menu_item_name);
+
+                    }
 
                 }
                 catch (Exception e)
