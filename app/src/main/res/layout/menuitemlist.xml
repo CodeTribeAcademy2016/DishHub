@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/imageItem"
+            android:padding="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtmenu1"
+            android:text="Menu Item Name"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Price2"
+            android:text="Item Price R"
+            />
+
+    <!-- <ImageView
+         android:layout_width="150dp"
+         android:layout_height="150dp"
+         android:id="@+id/menuTem2"
+         android:padding="5dp"/>
+
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:id="@+id/txtmenu2"
+         android:text="Menu Item Name"
+         />
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:id="@+id/Price1"
+         android:text="Item Price R"/>
+
+      <ImageView
+             android:layout_width="150dp"
+             android:layout_height="150dp"
+             android:id="@+id/menuTem3"
+             android:padding="5dp"/>
+
+      <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:id="@+id/txtmenu3"
+             android:text="Menu Item Name"
+             />
+
+     <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:id="@+id/Price3"
+             android:text="Item Price R"
+             />
+
+
+     <ImageView
+         android:layout_width="150dp"
+         android:layout_height="150dp"
+         android:id="@+id/menuTem4"
+         android:padding="5dp"/>
+
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:id="@+id/txtmenu5"
+         android:text="Menu Item Name"
+         />
+
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:id="@+id/Price5"
+         android:text="Item Price R"
+         />-->
+
+
+</LinearLayout>
+
+
+</ScrollView>

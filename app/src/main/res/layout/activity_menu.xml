@@ -42,7 +42,7 @@
                 android:id="@+id/text1"
                 android:layout_width="match_parent"
                 android:layout_height="42dp"
-                android:text="@string/food"
+                android:text="Pap meat :R20.00"
                 android:textSize="20sp"
                 android:gravity="left"
                 />

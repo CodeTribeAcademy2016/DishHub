@@ -1,71 +1,117 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/green"
+
     tools:context="com.example.codetribe.disapp.HomeActivity"
     android:gravity="center_vertical">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="180dip"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/ukudla"
+
+        />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/editName"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_marginTop="10dp"
-        android:background="#FFF"
-        android:hint="@string/username"
+        android:hint="@string/name"
         android:textColorHint="#a2abaf"
-        android:inputType="textPassword" />
+        android:inputType="text"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:textColorHighlight="@color/colorAccent"/>
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/editSurname"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:background="#FFF"
         android:textColorHint="#a2abaf"
         android:layout_marginTop="10dp"
-        android:hint="@string/password" />
+        android:hint="@string/surname"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:textColorHighlight="@color/colorAccent"/>
 
     <EditText
-        android:id="@+id/editText5"
+        android:id="@+id/editEmail"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_marginTop="10dp"
-        android:background="#FFF"
         android:textColorHint="#a2abaf"
         android:hint="@string/email"
-        android:inputType="textPassword" />
+        android:inputType="text"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:textColorHighlight="@color/colorAccent"/>
 
     <EditText
-        android:id="@+id/editText6"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:background="#FFF"
-        android:layout_marginTop="10dp"
-        android:textColorHint="#a2abaf"
-        android:hint="@string/address" />
-
-    <EditText
-        android:id="@+id/editText7"
+        android:id="@+id/editContact"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_marginTop="10dp"
         android:textColorHint="#a2abaf"
-        android:background="#FFF"
-        android:hint="@string/phoneNumber"
-        android:inputType="textPassword" />
+        android:hint="@string/contact"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:textColorHighlight="@color/colorAccent"/>
 
     <EditText
-        android:id="@+id/editText8"
+        android:id="@+id/editAddress"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:textColorHint="#a2abaf"
+        android:hint="@string/address"
+        android:inputType="text"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:textColorHighlight="@color/colorAccent"/>
+
+    <EditText
+        android:id="@+id/editUsername"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:textColorHint="#a2abaf"
-        android:background="#FFF"
         android:layout_marginTop="10dp"
-        android:hint="@string/company" />
+        android:hint="@string/username"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:textColorHighlight="@color/colorAccent"/>
+
+        <EditText
+            android:id="@+id/editPassword"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textColorHint="#a2abaf"
+            android:layout_marginTop="10dp"
+            android:inputType="textPassword"
+            android:hint="@string/password"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:textColorHighlight="@color/colorAccent"/>
+
+        <EditText
+            android:id="@+id/editRestID"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textColorHint="#a2abaf"
+            android:layout_marginTop="10dp"
+            android:hint="@string/restuarantId"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:textColorHighlight="@color/colorAccent"/>
 
     <Button
         android:layout_width="match_parent"
@@ -73,8 +119,14 @@
         android:text="@string/signup"
         android:layout_marginTop="10dp"
         android:id="@+id/btnSignUp"
+        android:onClick="register"
         android:scaleType="centerCrop"
-        android:background="@drawable/btngreen"
-        android:layout_marginBottom="53dp" />
-</LinearLayout>
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="53dp"
+        android:background="@color/colorAccent"
+        android:textColorHighlight="@color/colorAccent"/>
+
+    </LinearLayout>
+</ScrollView>
 

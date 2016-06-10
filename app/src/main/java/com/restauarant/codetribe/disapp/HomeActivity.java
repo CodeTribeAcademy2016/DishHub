@@ -1,5 +1,6 @@
 package com.restauarant.codetribe.disapp;
 
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -10,7 +11,7 @@ import android.widget.Toast;
 /**
  * Created by CodeTribe1 on 2016-03-22.
  */
-public class HomeActivity extends AppCompatActivity {
+public class   HomeActivity extends AppCompatActivity {
 
     Button log,reg;
     @Override
@@ -39,7 +40,7 @@ public class HomeActivity extends AppCompatActivity {
             {
                 Intent intent = new Intent(HomeActivity.this, Register.class);
                 startActivity(intent);
-                Toast.makeText(getBaseContext(),"Sign in", Toast.LENGTH_LONG).show();
+                Toast.makeText(getBaseContext(),"Sign up", Toast.LENGTH_LONG).show();
             }
         });
     }
