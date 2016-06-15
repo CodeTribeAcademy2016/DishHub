@@ -2,10 +2,9 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center_vertical"
     android:orientation="vertical"
-
-    tools:context="com.example.codetribe.disapp.HomeActivity"
-    android:gravity="center_vertical">
+    tools:context="com.example.codetribe.disapp.HomeActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -25,106 +24,106 @@
         android:id="@+id/editName"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:layout_marginTop="10dp"
-        android:hint="@string/name"
-        android:textColorHint="#a2abaf"
-        android:inputType="text"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
-        android:textColorHighlight="@color/colorAccent"/>
+        android:layout_marginTop="10dp"
+        android:hint="@string/name"
+        android:inputType="text"
+        android:textColorHighlight="@color/colorAccent"
+        android:textColorHint="#a2abaf" />
 
     <EditText
         android:id="@+id/editSurname"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:textColorHint="#a2abaf"
-        android:layout_marginTop="10dp"
-        android:hint="@string/surname"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
-        android:textColorHighlight="@color/colorAccent"/>
+        android:layout_marginTop="10dp"
+        android:hint="@string/surname"
+        android:textColorHighlight="@color/colorAccent"
+        android:textColorHint="#a2abaf" />
 
     <EditText
         android:id="@+id/editEmail"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:layout_marginTop="10dp"
-        android:textColorHint="#a2abaf"
-        android:hint="@string/email"
-        android:inputType="text"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
-        android:textColorHighlight="@color/colorAccent"/>
+        android:layout_marginTop="10dp"
+        android:hint="@string/email"
+        android:inputType="text"
+        android:textColorHighlight="@color/colorAccent"
+        android:textColorHint="#a2abaf" />
 
     <EditText
         android:id="@+id/editContact"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:layout_marginTop="10dp"
-        android:textColorHint="#a2abaf"
-        android:hint="@string/contact"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
-        android:textColorHighlight="@color/colorAccent"/>
+        android:layout_marginTop="10dp"
+        android:hint="@string/contact"
+        android:textColorHighlight="@color/colorAccent"
+        android:textColorHint="#a2abaf" />
 
     <EditText
         android:id="@+id/editAddress"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:layout_marginTop="10dp"
-        android:textColorHint="#a2abaf"
-        android:hint="@string/address"
-        android:inputType="text"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
-        android:textColorHighlight="@color/colorAccent"/>
+        android:layout_marginTop="10dp"
+        android:hint="@string/address"
+        android:inputType="text"
+        android:textColorHighlight="@color/colorAccent"
+        android:textColorHint="#a2abaf" />
 
     <EditText
         android:id="@+id/editUsername"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:textColorHint="#a2abaf"
-        android:layout_marginTop="10dp"
-        android:hint="@string/username"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
-        android:textColorHighlight="@color/colorAccent"/>
+        android:layout_marginTop="10dp"
+        android:hint="@string/username"
+        android:textColorHighlight="@color/colorAccent"
+        android:textColorHint="#a2abaf" />
 
         <EditText
             android:id="@+id/editPassword"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:textColorHint="#a2abaf"
-            android:layout_marginTop="10dp"
-            android:inputType="textPassword"
-            android:hint="@string/password"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
-            android:textColorHighlight="@color/colorAccent"/>
+            android:layout_marginTop="10dp"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:textColorHighlight="@color/colorAccent"
+            android:textColorHint="#a2abaf" />
 
         <EditText
             android:id="@+id/editRestID"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:textColorHint="#a2abaf"
-            android:layout_marginTop="10dp"
-            android:hint="@string/restuarantId"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
-            android:textColorHighlight="@color/colorAccent"/>
+            android:layout_marginTop="10dp"
+            android:hint="@string/restuarantId"
+            android:textColorHighlight="@color/colorAccent"
+            android:textColorHint="#a2abaf" />
 
     <Button
+        android:id="@+id/btnSignUp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/signup"
-        android:layout_marginTop="10dp"
-        android:id="@+id/btnSignUp"
-        android:onClick="register"
-        android:scaleType="centerCrop"
+        android:layout_marginBottom="53dp"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
-        android:layout_marginBottom="53dp"
+        android:layout_marginTop="10dp"
         android:background="@color/colorAccent"
+        android:onClick="register"
+        android:scaleType="centerCrop"
+        android:text="@string/signup"
         android:textColorHighlight="@color/colorAccent"/>
 
     </LinearLayout>

@@ -1,121 +1,123 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:layout_height="match_parent"
+    android:background="#A5D6A7"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="com.example.user.yummydive.Favourite">
 
     <ImageView
+        android:id="@+id/imageView2"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:id="@+id/imageView2"
-        android:src="@drawable/kaua"
-        android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:contentDescription="@string/kaua" />
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/kaua"
+        android:src="@drawable/kaua" />
 
     <RatingBar
 
+        android:id="@+id/ratingBar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/ratingBar"
-        android:layout_alignLeft="@+id/ratingBar5"
-        android:layout_alignStart="@+id/ratingBar5"
-        android:layout_alignRight="@+id/ratingBar5"
+        android:layout_alignBottom="@+id/imageView2"
         android:layout_alignEnd="@+id/ratingBar5"
-        android:layout_alignBottom="@+id/imageView2" />
+        android:layout_alignLeft="@+id/ratingBar5"
+        android:layout_alignRight="@+id/ratingBar5"
+        android:layout_alignStart="@+id/ratingBar5" />
 
     <ImageView
-        android:src="@drawable/mcd"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
         android:id="@+id/imageView1"
-
-        android:layout_below="@+id/imageView2"
-        android:layout_alignRight="@+id/imageView2"
-        android:layout_alignEnd="@+id/imageView2"
-        android:contentDescription="@string/mugg" />
-
-    <ImageView
-        android:src="@drawable/nandos"
         android:layout_width="100dp"
         android:layout_height="100dp"
+        android:layout_alignEnd="@+id/imageView2"
+
+        android:layout_alignRight="@+id/imageView2"
+        android:layout_below="@+id/imageView2"
+        android:contentDescription="@string/mugg"
+        android:src="@drawable/mcd" />
+
+    <ImageView
         android:id="@+id/imageView3"
-        android:layout_below="@+id/imageView1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_alignLeft="@+id/imageView1"
         android:layout_alignStart="@+id/imageView1"
-        android:contentDescription="@string/nandos" />
+        android:layout_below="@+id/imageView1"
+        android:contentDescription="@string/nandos"
+        android:src="@drawable/nandos" />
 
     <ImageView
-        android:src="@drawable/mugg"
+        android:id="@+id/imageView4"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:id="@+id/imageView4"
-        android:layout_below="@+id/imageView3"
         android:layout_alignLeft="@+id/imageView3"
         android:layout_alignStart="@+id/imageView3"
-        android:contentDescription="nandos" />
+        android:layout_below="@+id/imageView3"
+        android:contentDescription="nandos"
+        android:src="@drawable/mugg" />
     <ImageView
-        android:src="@mipmap/bk"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
         android:id="@+id/imageView5"
-
-        android:layout_below="@+id/imageView7"
-        android:layout_alignLeft="@+id/imageView7"
-        android:layout_alignStart="@+id/imageView7"
-        android:contentDescription="@string/burger" />
-
-    <ImageView
-        android:src="@drawable/kaua"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:id="@+id/imageView7"
+        android:layout_alignLeft="@+id/imageView7"
 
-        android:layout_below="@+id/imageView4"
+        android:layout_alignStart="@+id/imageView7"
+        android:layout_below="@+id/imageView7"
+        android:contentDescription="@string/burger"
+        android:src="@mipmap/bk" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_alignLeft="@+id/imageView4"
-        android:layout_alignStart="@+id/imageView4" />
+
+        android:layout_alignStart="@+id/imageView4"
+        android:layout_below="@+id/imageView4"
+        android:src="@drawable/kaua" />
 
     <RatingBar
+        android:id="@+id/ratingBar2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/ratingBar2"
         android:layout_alignBottom="@+id/imageView1"
         android:layout_alignLeft="@+id/ratingBar"
         android:layout_alignStart="@+id/ratingBar" />
 
     <RatingBar
+        android:id="@+id/ratingBar3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/ratingBar3"
         android:layout_above="@+id/imageView4"
         android:layout_alignLeft="@+id/ratingBar2"
         android:layout_alignStart="@+id/ratingBar2" />
 
     <RatingBar
+        android:id="@+id/ratingBar4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/ratingBar4"
         android:layout_above="@+id/imageView7"
         android:layout_alignLeft="@+id/ratingBar3"
         android:layout_alignStart="@+id/ratingBar3" />
 
     <RatingBar
+        android:id="@+id/ratingBar5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/ratingBar5"
         android:layout_alignBottom="@+id/imageView7"
         android:layout_alignParentEnd="true" />
 
     <RatingBar
+        android:id="@+id/ratingBar6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/ratingBar6"
-        android:layout_alignTop="@+id/imageView5"
         android:layout_alignLeft="@+id/ratingBar5"
-        android:layout_alignStart="@+id/ratingBar5" />
+        android:layout_alignStart="@+id/ratingBar5"
+        android:layout_alignTop="@+id/imageView5" />
 
 </RelativeLayout>
 

@@ -20,7 +20,6 @@ public class OrderHistory extends AppCompatActivity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_orderhistory);
-
         final String[] orders = {"Pap n  beef \nR38.99  \n12/01/2016","Pap n Chicken\nR34.99\n15/01/2016","grilled Chicken\nR45.00\n22/01/2016","Fish n chips\nR24.99\n25/01/2016","cheese burger\nR48.00\n28/01/2016","Maccaroni n' meat balls\nR57.99\n10/02/2016","Pap n Chicken\nR34.99\n16/02/2016","grilled Chicken\nR45.00\n24/02/2016","chips\nR16.00\n03/03/2016","cheese burger\nR48.00\n08/02/2016","Maccaroni n' meat balls\nR57.99\n13/03/2016"};
         ListAdapter orderAdapter = new ArrayAdapter<String> (this,android.R.layout.simple_list_item_1,orders);
         final ListView listView = (ListView)findViewById(R.id.listView);

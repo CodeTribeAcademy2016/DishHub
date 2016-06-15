@@ -12,6 +12,7 @@
         android:theme="@style/AppTheme">
         <activity android:name=".HomeActivity" />
         <activity android:name=".MainActivity" />
+        <activity android:name=".OrderHistory" />
         <activity
             android:name=".navigation"
             android:label="@string/title_activity_navigation"
@@ -27,8 +28,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        /
-        <activity android:name=".OrderHistory" />
+
         <activity android:name=".Register" />
         <activity
             android:name=".Developers"
@@ -39,11 +39,13 @@
             android:name=".CustomerNavigation"
             android:label="Restaurant List"
             android:theme="@style/AppTheme" />
-        <activity android:name=".ChangePassword" />
         <activity android:name=".ForgotPassword" />
         <activity android:name=".MenuCategory" />
         <activity android:name=".ManuItem" />
         <activity android:name=".OrderItems"></activity>
+
+
     </application>
+
 
 </manifest>
