@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import org.json.JSONException;
 import org.json.JSONObject;
 
 import utils.Constance;
@@ -28,6 +29,7 @@ public class Register extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
+
 
         edName = (EditText) findViewById(R.id.editName);
         edSurname = (EditText) findViewById(R.id.editSurname);
@@ -50,7 +52,8 @@ public class Register extends AppCompatActivity {
 
 
 
-
+        //http://localhost:8080/NsizwaRestaurant/rs?JSON={%22customer%22:{%22name%22:%22Tshigo%22,%22surname%22:%22Masilo%22,%22email%22:%22Tshigo@gmail.com%22,%22contact%22:%220785225567%22,%22address%22:%22543%20Ext%2004%20Highveld%20Park%20Hibron%202268%22,%22username%22:%22Misal%22,%22password%22:%22Tshigo@078%22,%22restuarantID%22:35},%22RequestType%22:20}
+        //{%22customer%22:{%22name%22:%22Tshigo%22,%22surname%22:%22Masilo%22,%22email%22:%22Tshigo@gmail.com%22,%22contact%22:%220785225567%22,%22address%22:%22543%20Ext%2004%20Highveld%20Park%20Hibron%202268%22,%22username%22:%22Misal%22,%22password%22:%22Tshigo@078%22,%22restuarantID%22:35},%22RequestType%22:20}
     }
     public void register(View v)
     {
@@ -63,47 +66,41 @@ public class Register extends AppCompatActivity {
         String password = edPassword.getText().toString();
         String  restId = (edRestuarandID.getText().toString());
 
-         String json_payload ="";
-        Log.i("Hello",name);
+        String json_customer = "";
 
-        try
-        {
-            json_payload = new JSONObject()
-                    .put(Constance.name,name)
-                    .put(Constance.surname,surname)
-                    .put(Constance.email,email)
-                    .put(Constance.contact,contact)
-                    .put(Constance.address,address)
-                    .put(Constance.username,username)
-                    .put(Constance.password,password)
-                    .put(Constance.restuarantId,restId)
-                    .put("}","}")
-                    .put(Constance.requestType,Constance.REGISTER_CUSTOMER).toString();
-
-        }
-        catch(Exception e)
-        {
-
-            e.getStackTrace();
+        try {
+            json_customer = new JSONObject()
+                    .put(Constance.customer,  new JSONObject()
+                            .put(Constance.name, name)
+                            .put(Constance.surname,surname)
+                            .put(Constance.email,email)
+                            .put(Constance.contact,contact)
+                            .put(Constance.address,address)
+                            .put(Constance.username,username)
+                            .put(Constance.password,password)
+                            .put(Constance.restuarantId,restId))
+                    .put(Constance.requestType, Constance.REGISTER_CUSTOMER).toString();
+        } catch (JSONException e) {
+            e.printStackTrace();
         }
 
-        final String json_pay = json_payload;
+        final String customer_payload = json_customer;
+        final String json_pay = json_customer;
         final OkHttp objHttp = new OkHttp();
-
         Thread thread = new Thread(new Runnable() {
             @Override
             public void run() {
 
                 try
                 {
-                    Log.i("Helo",Constance.dishHubUrl);
-                    Log.i("Helo",Constance.dishHubUrl+ "?JSON" +json_pay);
-                    String res = objHttp.post(Constance.dishHubUrl+"?JSON="+json_pay, json_pay);
+                    Log.i("Ygritte",json_pay);
+                    Log.i("Ygritte",Constance.dishHubUrl+ "?JSON=" +customer_payload);
+                    String res = objHttp.post(Constance.dishHubUrl+"?JSON="+customer_payload, customer_payload);
                     final JSONObject objJson = new JSONObject(res.trim());
-                    Log.i("Helo",res);
+                    Log.i("Ygritte","response : "+res);
                     final String statusCode = objJson.getString("statuscode").toString();
                     String message = objJson.getString("message");
-                    Log.i("Helo", message);
+                    Log.i("Ygritte", message);
 
                     if(Integer.parseInt(statusCode) == 0)
                     {
