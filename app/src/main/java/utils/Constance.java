@@ -11,6 +11,7 @@ public class Constance {
     public static  String password = "password";
     public static String loginRequest = "24";
     public static String registerRequest = "20";
+    public static String customer = "customer";
     //register variables
     public static String name="name";
     public static String surname = "surname";
@@ -18,6 +19,12 @@ public class Constance {
     public static String address = "address";
     public static String username = "username";
     public static String restuarantId = "restuarantID";
+    //menu variables
+    public static  String breakfast = "breakfast";
+    public static String lunch = "lunch";
+    public static String dinner = "dinner";
+    public static String menu = "menu";
+
 
     public static  String dishHubUrl = "http://146.64.85.17:8080/NsizwaRestaurant/rs";
 
